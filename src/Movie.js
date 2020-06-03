@@ -2,7 +2,6 @@ import React from 'react';
 
 export default function Movie(props) {
   return (
-    <>
       <div className="movie">
         <img
           src={props.movie.poster_path === null ? "image-not-available.jpg" : 'https://image.tmdb.org/t/p/w500' + props.movie.poster_path}
@@ -23,6 +22,5 @@ export default function Movie(props) {
           </div>
         </div>
       </div>
-    </>
   )
 }

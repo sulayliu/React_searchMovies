@@ -13,11 +13,9 @@ class Header extends React.Component {
     this.props.searchMovies(this.state.inputEle)
     this.setState({inputEle: ''})
     e.preventDefault();
-  }
-  
+  };
 
   render = () => {
-
     return (
       <header className="header">
         <a href="/"
