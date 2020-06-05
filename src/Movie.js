@@ -4,7 +4,9 @@ export default function Movie(props) {
   return (
       <div className="movie">
         <img
-          src={props.movie.poster_path === null ? "image-not-available.jpg" : 'https://image.tmdb.org/t/p/w500' + props.movie.poster_path}
+          src={props.movie.poster_path === null ? 
+            "image-not-available.jpg" : 
+            'https://image.tmdb.org/t/p/w500' + props.movie.poster_path}
           alt="Movie poster"
         />
         <div className="overlay">
@@ -13,7 +15,7 @@ export default function Movie(props) {
           <div className="plot">
             {props.movie.overview}
           </div>
-          <div data-toggled={props.heartList.includes(props.movie.id) ? "true" : "false"} 
+          <div data-toggled={props.heartList.includes(props.movie.id)} 
             onClick={() => props.toggleHeart(props.movie.id)}
             className="listToggle">
             <div>

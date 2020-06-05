@@ -18,12 +18,13 @@ class Header extends React.Component {
   render = () => {
     return (
       <header className="header">
-        <a href="/"
-          ><img
+        <a href="/">
+          <img
             src="https://fontmeme.com/permalink/190707/fd4735271a0d997cbe19a04408c896fc.png"
             alt="netflix-font"
             border="0"
-        /></a>
+          />
+        </a>
         <form id="search" className="search" onSubmit={this.searchMovies}>
           <input 
             type="search" 
@@ -34,7 +35,7 @@ class Header extends React.Component {
         </form>
       </header>
     )
-  }
+  };
 }
 
 export default Header;
